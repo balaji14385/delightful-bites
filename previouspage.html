@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* *{
+            margin:0;
+            padding:0;
+        } */
+        .box {
+            width: 450px;
+            border: 1px solid black;
+            border-radius: 14px;
+            padding: 10px;
+            display: flex;
+        }
+
+        .box img {
+            width: 100%;
+            height:100%;
+            border-radius: 14px;
+        }
+
+        .btn {
+            margin: 5px;
+            width: 100px;
+            height: 40px;
+            border-radius: 10px;
+            border: 1px solid black;
+            cursor: pointer;
+        }
+
+        .btn4 {
+            display: block;
+            margin: 5px;
+            width: 130px;
+            height: 40px;
+            border-radius: 10px;
+            border: 1px solid black;
+            font-size: 22px;
+
+        }
+
+        .by {
+            width: 130px;
+            position: relative;
+        }
+
+        .s1 {
+            position: absolute;
+            right: 0;
+            top: 3px;
+            cursor: pointer;
+        }
+
+        .s2 {
+            position: absolute;
+            left: 8px;
+            top: 3px;
+            cursor: pointer;
+        }
+
+        .bn1 {
+            cursor: pointer;
+            width: 350px;
+            height: 40px;
+            border-radius: 10px;
+            color: white;
+            background-color: black;
+            font-size: 20px;
+        }
+
+        .main {
+            margin: 5px auto;
+            width: 1200px;
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        .rt {
+            font-size: 20px;
+            width: 1100px;
+            margin: 30px auto;
+        }
+        .nav1 {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 0px;
+            background-color: black;
+            color: white;
+            padding:10px;
+            align-items: center;
+            vertical-align: middle;
+            position: relative;
+            padding:0px 20px;
+            margin-bottom:30px;
+        }
+
+        .a1 {
+            text-decoration: none;
+            color: white;
+        }
+
+        #toggle,
+        .svg {
+            display: none;
+        }
+
+        .list {
+            list-style-type: none;
+            display: flex;
+            gap: 40px;
+            font-size: 20px;
+        }
+
+        .a11 {
+            text-decoration: none;
+            color: white;
+        }
+
+        .ma1 {
+            width:100%;
+            position: absolute;
+            background-color: black;
+            color: white;
+            padding:10px;
+            top:70px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        .ma1{
+            border-radius:10px;
+            display:flex;
+            justify-content:space-between;
+        }
+        .ma1{
+            display:none;
+        }
+        #ser:hover .ma1{
+            display:flex;
+        }
+        .col ul {
+            list-style-type: none;
+        }
+        .col ul li{
+            padding-bottom:8px;
+        }
+        body{
+        user-select: none;
+     }
+     .log{
+        width:80px;
+        height:60px;
+        border-radius:50%;
+        margin:0px;
+        padding:0px;
+     }
+     .logo1{
+        margin:0px;
+        padding:0px;
+     }
+     .fle{
+        display:flex;
+        gap:5px;
+        align-items:center;
+     }
+     .a11:hover{
+         color:hotpink;
+        }
+        @media(max-width:1100px) {
+            .main {
+            margin:5px auto;
+            width:85vw;
+            display: flex;
+            justify-content:center;
+            flex-direction: column;
+            vertical-align: middle;
+        }
+        .box {
+            width:80vw;
+            border: 1px solid black;
+            border-radius: 14px;
+            padding: 10px;
+            display: flex;
+            justify-content:center;
+            margin:0 auto;
+        }
+        .rt {
+            font-size: 20px;
+            width:90vw;
+            margin:5px auto;
+           
+        }
+        .bn1 {
+            width:70vw;
+            height: 40px;
+            border-radius: 10px;
+            color: white;
+            background-color: black;
+            font-size: 20px;
+        }
+        .box1{
+          margin:3px auto;
+        }
+        .p1{
+            text-align: justify;
+        }
+        .btn{
+            margin:0px;
+        }
+        .bn{
+                display:flex;
+                gap:5px;
+            }
+            .btn {
+            margin:0px;
+            width:80px;
+            height: 40px;
+            border-radius: 10px;
+            border: 1px solid black;
+        }
+        .list {
+                display: none;
+                width: 100%;
+                text-align: center;
+                margin-top:20px;
+            }
+
+            .svg {
+                display: flex;
+            }
+
+            #toggle:checked~.list {
+                display: flex;
+                flex-direction: column;
+            }
+
+            .nav1 {
+                display: flex;
+                justify-content: space-between;
+                margin-top: 0px;
+                background-color: black;
+                color: white;
+                padding:10px;
+                align-items: center;
+                vertical-align: middle;
+                flex-wrap: wrap;
+            }
+
+            .lis {
+                position: relative;
+                top: 0px;
+            }
+
+            .lis li {
+                margin-bottom: 0px;
+                margin-top: px;
+            }
+
+            #ser:checked~.ma {
+                display: block;
+            }
+            .ma1{
+            display:flex;
+            justify-content:space-evenly;
+            flex-direction: column;
+            position:relative;
+            align-items: center;
+        }
+        .ma1 {
+            margin-top:0px;
+            width:100%;
+            background-color: black;
+            color: white;
+        }
+        .ma1{
+            display:none;
+        }
+        }
+    </style>
+</head>
+
+<body> 
+    <div class="nav1"> 
+    <div class="fle">
+     <img class="log" src="logo.jpg" alt="">                                                          
+    <h2 class="logo1">DelightFul Bits</h2>
+</div>
+    <input class="input" type="checkbox" id="toggle">
+    <label for="toggle">
+        <svg class="svg" xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+            class="bi bi-list-ul" viewBox="0 0 16 16">
+            <path fill-rule="evenodd"
+                d="M5 11.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5m-3 1a1 1 0 1 0 0-2 1 1 0 0 0 0 2m0 4a1 1 0 1 0 0-2 1 1 0 0 0 0 2m0 4a1 1 0 1 0 0-2 1 1 0 0 0 0 2" />
+        </svg>
+    </label>
+    <ul class="list">
+        <a class="a11" href="">
+            <li>Home</li>
+        </a>
+        <a class="a11" href="">
+            <li>About</li>
+        </a>
+        <a class="a11" href="#">
+            <li id="ser">services</li>
+        </a>     
+        <a class="a11" href="cart.html">
+            <li>Cart Page</li>
+        </a>
+        <a class="a11" href="">
+            <li>Contact US</li>
+        </a>
+    </ul>
+
+</div>
+    <div class="main">
+        <div class="box">
+            <script>
+                var a1="{{%aa%}}"*1
+            </script>
+            <img src={{%image%}} alt="">
+
+        </div>
+        <div class="box1">
+            <h3>{{%name%}}</h3>
+            <p id="p">{{%ii%}}</p>
+            <p>Tax included</p>
+            <p id="siz">size:250gms</p>
+            <button class="btn" id="b1" onclick="pri(a1,'250gms', this)" style="background-color:yellow;">250gms</button>
+            <button class="btn" id="b2" onclick="pri('{{%bb%}}','500gms', this)">500gms</button>
+            <button class="btn" id="b3" onclick="pri('{{%cc%}}','1kg' ,this)">1kg</button>
+            <p>Quantity</p>
+            <div class="by">
+                <button class="btn4" id="bv">1</button>
+                <svg class="s1" onclick="clic()" xmlns="http://www.w3.org/2000/svg" width="40" height="35"
+                    fill="currentColor" class="bi bi-plus" viewBox="0 0 16 16">
+                    <path
+                        d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4" />
+                </svg>
+                <svg class="s2" onclick="cli()" xmlns="http://www.w3.org/2000/svg" width="40" height="35"
+                    fill="currentColor" class="bi bi-dash" viewBox="0 0 16 16">
+                    <path d="M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8" />
+                </svg>
+
+
+            </div><br>
+            <div class="vb">
+                <button class="bn1" onclick="bnt1()">Addtocart</button>
+
+            </div>
+            <h3 class="h3" id="haa">{{%total%}}</h3>
+        </div>
+    </div>
+    <div class="rt">
+        <hr>
+        <h3>Product Description:-</h3>
+        <p class="p1">
+         {{%description%}}
+        </p>
+    </div>
+    <script>
+        var cc = 1;
+        var a = a1;
+        function tot() {
+            var tt = a * cc;
+            document.getElementById("haa").innerHTML = `Total:- ${tt}.00`;
+        }
+        b1.style.backgroundColor="yellow";
+        function pri(pr, wg, th) {
+
+            a = pr;
+            var b = wg;
+            document.getElementById("p").innerHTML = `Rs.${a}.00`;
+            document.getElementById("siz").innerHTML = `size:${wg}`;
+            var c = th;
+            var se = document.querySelectorAll("button");
+            for (but of se) {
+                but.style.backgroundColor = '';
+                c.style.backgroundColor = "yellow";
+
+            }
+            tot();
+        }
+
+        function clic() {
+
+            cc = cc + 1;
+            document.getElementById("bv").innerHTML = cc;
+            tot();
+        }
+        function cli() {
+            if (cc > 1) {
+                cc = cc - 1;
+                document.getElementById("bv").innerHTML = cc;
+            }
+            tot();
+        }
+        function bnt1() {
+            alert("item is added")
+
+    let cart = JSON.parse(localStorage.getItem('cart')) || [];
+    
+    const product = {
+        image:"{{%image1%}}",
+        name: "{{%name1%}}",
+        price: a,
+        size: document.getElementById("siz").innerText.split(':')[1],
+        quantity: cc
+    }
+    cart.push(product);
+    localStorage.setItem('cart', JSON.stringify(cart));
+}
+
+    </script>
+
+</body>
+
+</html>

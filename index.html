@@ -1,0 +1,729 @@
+<html>
+
+<head>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <title>DelightFul Bites</title>
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+   <style>
+      @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+      body {
+         margin: 10px;
+         font-family: 'Poppins', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+         font-size: 14px;
+
+      }
+
+      .ad {
+         margin: 20px 0px;
+         display: flex;
+         flex-wrap: no wrap;
+         justify-content: space-between;
+
+      }
+
+      .box {
+         width: 305px;
+         border-radius: 14px;
+         border: 1px solid lightgray;
+         margin: 10px;
+         margin-bottom: 10px;
+         box-sizing: border-box;
+         text-align: center;
+         padding: 5px;
+
+      }
+
+      a {
+         color: black
+      }
+
+      .a {
+         height: 200px;
+         width: 100%;
+         border-radius: 30px;
+
+
+      }
+
+      .p {
+         text-align: center;
+         color: black;
+         padding: 3px;
+      }
+
+      .logo {
+         height: 50px;
+         width: 50px;
+         border-radius: 50%;
+      }
+
+      .box:hover {
+         border-color: blue;
+         transform: scale(0.9);
+      }
+
+      h1 {
+         margin-top: 10px;
+         color: black;
+         text-align: center;
+         font-family: lucida;
+         text-transform: capitalize;
+      }
+
+      .aa {
+         position: sticky;
+         top: 0;
+         z-index: 1;
+      }
+
+      .p1 {
+         float: left;
+         margin-left: 15px;
+      }
+
+      #toggle,
+      svg {
+         display: none;
+      }
+
+      .p2 {
+         float: right;
+         margin-right: 20px;
+      }
+
+      .center {
+
+         margin-bottom: 10px;
+      }
+
+      .btn {
+         border-radius: 14px;
+         margin: auto;
+      }
+
+      .img2 {
+         height: 80px;
+         width: 80px;
+         position: absolute;
+         top: 5PX;
+         left: 5px;
+         border-radius: 25%;
+      }
+
+      .img3 {
+         height: 60px;
+         width: 100px;
+         position: absolute;
+         bottom: 0px;
+         left: 0px;
+         border-radius: 14px;
+      }
+
+      .img1 {
+         position: relative;
+      }
+
+      .pp {
+         display: none;
+         position: absolute;
+         z-index: 1;
+         margin: 50px 100px;
+         width: 400px;
+         border: 3px solid greenyellow;
+         padding: 10px;
+         background-color: black;
+         color: white;
+      }
+
+      /* .btn:hover+.pp {
+         display: block
+      } */
+
+      ul {
+         list-style-type: none;
+         display: flex;
+         gap: 40px;
+         font-size: 20px;
+         margin: auto 0px;
+      }
+
+      .nav {
+         display: flex;
+         justify-content: space-between;
+         margin-top: 0px;
+         background-color: black;
+         color: white;
+         padding: 5px;
+         align-items: center;
+         vertical-align: middle;
+         border-radius: 14px;
+      }
+
+      .a1 {
+         text-decoration: none;
+         color: white;
+         margin: 0 auto;
+      }
+
+      .foot {
+         background-color: black;
+         color: white;
+         padding: 10px 70px;
+         display: flex;
+         justify-content: space-between;
+         border-radius: 14px;
+      }
+
+      .foot a,
+      h3,
+      p {
+         color: white;
+         text-decoration: none;
+         display: block;
+         margin: 10px;
+
+      }
+
+      .logo1 {
+         margin: auto 0px;
+      }
+
+      .log {
+         width: 80px;
+         height: 60px;
+         border-radius: 50%;
+         margin: 0px;
+         padding: 0px;
+      }
+
+      .logo1 {
+         margin: 0px;
+         padding: 0px;
+      }
+
+      .fle {
+         display: flex;
+         gap: 5px;
+         align-items: center;
+      }
+
+      .a11 {
+         text-decoration: none;
+         color: white;
+         margin-right: 5px;
+      }
+
+      .a11:hover {
+         color: hotpink;
+      }
+
+      .sli {
+         position: relative;
+         width: 99%;
+         height: 400px;
+         margin: 20px auto;
+         /* margin:20px 0px; */
+      }
+
+      .ban {
+         border-radius: 14px;
+         width: 100%;
+         height: 100%;
+
+      }
+
+      #hhh {
+         background: linear-gradient(to bottom, red, yellow, rgb(10, 173, 238));
+         color: transparent;
+         background-clip: text;
+         position: absolute;
+         left: 30px;
+         bottom: 0px;
+      }
+
+      @media(max-width:992px) {
+         .ad {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+
+
+         }
+
+         .center {
+
+            margin-bottom: 10px;
+         }
+
+         .p2 {
+            float: none;
+            margin-right: 0px;
+            text-align: center;
+         }
+
+         .ad {
+            margin: 5px auto;
+         }
+
+         .box {
+            width:150px;
+            border-radius: 14px;
+            border: 1px solid lightgray;
+            margin-bottom: 10px;
+            box-sizing: border-box;
+            text-align: center;
+         }
+
+         .list {
+            display: none;
+            width: 100%;
+         }
+
+         .svg {
+            display: flex;
+         }
+
+         #toggle:checked~.list {
+            display: flex;
+            flex-direction: column;
+         }
+
+         .foot {
+            background-color: black;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            border-radius: 14px;
+            padding: 10px;
+         }
+
+         .foot a,
+         h3,
+         p {
+            color: white;
+            text-decoration: none;
+            display: block;
+
+         }
+
+         .p1 {
+            text-align: center;
+            float: none;
+            margin-left: 0px;
+         }
+
+         .sli {
+            position: relative;
+            width: 99%;
+            height: 200px;
+            margin: 20px auto;
+            /* margin:20px 0px; */
+         }
+         #hhh {
+         background: linear-gradient(to bottom, red, yellow, rgb(10, 173, 238));
+         color: transparent;
+         background-clip: text;
+         position: absolute;
+         left:10px;
+         bottom: 0px;
+      }
+      .a {
+         height:150px;
+         width: 100%;
+         border-radius:15px;
+
+
+      }
+      .p,.p1,.p2{
+         font-size:17px
+      }
+      .a11{
+         margin:auto; 
+      }
+      }
+   </style>
+</head>
+
+<body>
+
+   <div class="nav">
+      <div class="fle">
+         <img class="log" src="logo.jpg" alt="">
+         <h2 class="logo1">DelightFul Bites</h2>
+      </div>
+      <input class="input" type="checkbox" id="toggle">
+      <label for="toggle">
+         <svg class="svg" xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+            class="bi bi-list-ul" viewBox="0 0 16 16">
+            <path fill-rule="evenodd"
+               d="M5 11.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5m-3 1a1 1 0 1 0 0-2 1 1 0 0 0 0 2m0 4a1 1 0 1 0 0-2 1 1 0 0 0 0 2m0 4a1 1 0 1 0 0-2 1 1 0 0 0 0 2" />
+         </svg>
+      </label>
+      <ul class="list">
+         <a class="a11" href="">
+            <li>Home</li>
+         </a>
+         <a class="a11" href="">
+            <li>About</li>
+         </a>
+         <a class="a11" href="cart.html">
+            <li>Cart Page</li>
+         </a>
+         <a class="a11" href="signup.html">
+            <li>Sign Up</li>
+         </a>
+         <a class="a11" href="login.html">
+            <li>Login</li>
+         </a>
+      </ul>
+
+   </div>
+   <div class="sli">
+      <img class="ban" src="slide1.jpg" id="bad" alt="">
+      <h1 id="hhh"></h1>
+   </div>
+   <script>
+      var ar = new Array( "slide2.jpg","slide3.jpg", "slide4.jpg", "slide.jpg");
+      var iii = 0;
+      var rrr;
+      function hello() {
+         document.getElementById("bad").src = ar[iii];
+         iii++;
+         if (iii > 3)
+            iii = 0;
+      }
+      function start() {
+         setInterval(hello, 2000);
+      }
+      start();
+      var text = "DelightFul Bites  "
+      var jjj = 0;
+      function text1() {
+         var x = text.slice(jjj, jjj + 1)
+         document.getElementById("hhh").innerHTML += x;
+         jjj++
+         if (jjj == text.length) {
+            jjj = 0
+            document.getElementById("hhh").innerHTML = "";
+         }
+      }
+      setInterval(text1, 500)
+
+   </script>
+   <div class="position">
+      <div class="ad">
+         <div class="box">
+            <div class="img1">
+               <a href="Ariselu"><img class="a" src="Arisalu.jpg"></a>
+               <img class="img2" src="bes.png">
+               <img class="img3" src="ex.png">
+            </div>
+            <h5 class="p">Arisalu</h5>
+            <h5 class="p1">Rs.270.00</h5>
+            <h5 class="p2">250gms</h5>
+            <!-- <a href="#" class="btn btn-dark btn-outline-warning center">Add Cart</a> -->
+            <p class="pp">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Blanditiis, accusantium.</p>
+
+         </div>
+         <div class="box">
+            <div class="img1">
+               <a href="Bandar-Laddu"> <img class="a" src="bandar_laddu_1.jpg"></a>
+               <img class="img3" src="ex.png">
+
+            </div>
+            <h5 class="p">Bandar Laddu</h5>
+            <h5 class="p1">Rs.250.00</h5>
+            <h5 class="p2">250gms</h5>
+            <!-- <a href="#" class="btn btn-dark btn-outline-warning center">Add Cart</a> -->
+
+         </div>
+         <div class="box">
+            <div class="img1">
+
+               <a href="Bellam-Sunnundalu"><img class="a" src="bellam_sunnundalu.jpg"></a>
+               <img class="img2" src="bes.png">
+            </div>
+            <h5 class="p">Bellam Sunnundalu</h5>
+            <h5 class="p1">Rs.220.00</h5>
+            <h5 class="p2">250gms</h5>
+            <!-- <a href="#" class="btn btn-dark btn-outline-warning center">Add Cart</a> -->
+
+         </div>
+         <div class="box">
+            <div class="img1">
+
+               <a href="Besan-Laddu"><img class="a" src="Besanladdu_1_1.jpg"></a>
+               <img class="img2" src="bes.png">
+               <img class="img3" src="ex.png">
+
+            </div>
+            <h5 class="p">Besan Laddu</h5>
+            <h5 class="p1">Rs.230.00</h5>
+            <h5 class="p2">250gms</h5>
+            <!-- <a href="#" class="btn btn-dark btn-outline-warning center">Add Cart</a> -->
+
+         </div>
+
+
+      </div>
+   </div>
+   <div class="ad">
+      <div class="box">
+         <div class="img1">
+
+            <a href="Bombay-Halwa"><img class="a" src="bombay_halwa.jpg"></a>
+            <img class="img2" src="bes.png">
+            <img class="img3" src="ex.png">
+         </div>
+         <h5 class="p">Bombay Halwa</h5>
+         <h5 class="p1">Rs.330.00</h5>
+         <h5 class="p2">250gms</h5>
+         <!-- <a href="#" class="btn btn-dark btn-outline-warning center">Add Cart</a> -->
+
+      </div>
+      <div class="box">
+         <div class="img1">
+
+            <a href="Dry-Fruits-Punch-Dates"><img class="a" src="dry-fruits-punch-dates.jpg"></a>
+         </div>
+         <h5 class="p">Dry Fruits</h5>
+         <h5 class="p1">Rs.400.00</h5>
+         <h5 class="p2">250gms</h5>
+         <!-- <a href="#" class="btn btn-dark btn-outline-warning center">Add Cart</a> -->
+
+      </div>
+      <div class="box">
+         <div class="img1">
+
+            <a href="Dry-Fruit-Pootharekulu"><img class="a" src="dryfruitpootharekulunew_1_1.jpg"></a>
+            <img class="img2" src="bes.png">
+            <img class="img3" src="ex.png">
+
+         </div>
+         <h5 class="p">Dry Fruit Pootharekulu</h5>
+         <h5 class="p1">Rs.200.00</h5>
+         <h5 class="p2">250gms</h5>
+         <!-- <a href="#" class="btn btn-dark btn-outline-warning center">Add Cart</a> -->
+
+      </div>
+      <div class="box">
+         <div class="img1">
+
+            <a href="Rava-Laddu"><img class="a" src="Ghee-Rava-Laddu.jpg"></a>
+
+         </div>
+         <h5 class="p">Rava Laddu</h5>
+         <h5 class="p1">Rs.150.00</h5>
+         <h5 class="p2">250gms</h5>
+         <!-- <a href="#" class="btn btn-dark btn-outline-warning center">Add Cart</a> -->
+
+      </div>
+
+
+   </div>
+   </div>
+   <div class="ad">
+      <div class="box">
+         <div class="img1">
+
+            <a href="Badusha"><img class="a" src="GheeBadusha.jpg"></a>
+            <img class="img2" src="bes.png">
+            <img class="img3" src="ex.png">
+
+         </div>
+         <h5 class="p">Badusha</h5>
+         <h5 class="p1">Rs.250.00</h5>
+         <h5 class="p2">250gms</h5>
+         <!-- <a href="#" class="btn btn-dark btn-outline-warning center">Add Cart</a> -->
+
+      </div>
+      <div class="box">
+         <div class="img1">
+
+            <a href="Honey-Mysore-Pak"><img class="a" src="HoneyMysorePak.jpg"></a>
+            <img class="img2" src="bes.png">
+            <img class="img3" src="ex.png">
+
+         </div>
+         <h5 class="p">Honey Mysore Pak</h5>
+         <h5 class="p1">Rs.350.00</h5>
+         <h5 class="p2">250gms</h5>
+         <!-- <a href="#" class="btn btn-dark btn-outline-warning center">Add Cart</a> -->
+
+      </div>
+      <div class="box">
+         <div class="img1">
+
+            <a href="Ice-Cream-Burfi"><img class="a" src="icecreamburfi_1_1.jpg"></a>
+            <img class="img2" src="bes.png">
+
+         </div>
+         <h5 class="p">Ice Cream Burfi</h5>
+         <h5 class="p1">Rs.300.00</h5>
+         <h5 class="p2">250gms</h5>
+         <!-- <a href="#" class="btn btn-dark btn-outline-warning center">Add Cart</a> -->
+
+      </div>
+      <div class="box">
+         <div class="img1">
+
+            <a href="Kaju-Katli"><img class="a" src="Kaju-Katli.jpg"></a>
+            <img class="img3" src="ex.png">
+
+         </div>
+         <h5 class="p">Kaju Katli</h5>
+         <h5 class="p1">Rs.150.00</h5>
+         <h5 class="p2">250gms</h5>
+         <!-- <a href="#" class="btn btn-dark btn-outline-warning center">Add Cart</a> -->
+
+      </div>
+
+   </div>
+   </div>
+   <div class="ad">
+      <div class="box">
+         <div class="img1">
+
+            <a href="Kobbari-Undalu"><img class="a" src="Kobbariundalu-coconutladdu_1_1.jpg"></a>
+            <img class="img3" src="ex.png">
+         </div>
+         <h5 class="p">Kobbari Undalu</h5>
+         <h5 class="p1">Rs.130.00</h5>
+         <h5 class="p2">250gms</h5>
+         <!-- <a href="#" class="btn btn-dark btn-outline-warning center">Add Cart</a> -->
+
+      </div>
+      <div class="box">
+         <div class="img1">
+
+            <a href="Kova-Puri"> <img class="a" src="Kova-Puri.jpg"></a>
+            <img class="img2" src="bes.png">
+            <img class="img3" src="ex.png">
+
+         </div>
+         <h5 class="p">Kova Puri</h5>
+         <h5 class="p1">Rs.200.00</h5>
+         <h5 class="p2">250gms</h5>
+         <!-- <a href="#" class="btn btn-dark btn-outline-warning center">Add Cart</a> -->
+
+      </div>
+      <div class="box">
+         <div class="img1">
+
+            <a href="Kova-Kajji-Kayalu"><img class="a" src="kovakajjikayalu2.jpg"></a>
+            <img class="img3" src="ex.png">
+
+         </div>
+         <h5 class="p">Kova Kajji Kayalu</h5>
+         <h5 class="p1">Rs.210.00</h5>
+         <h5 class="p2">250gms</h5>
+         <!-- <a href="#" class="btn btn-dark btn-outline-warning center">Add Cart</a> -->
+
+      </div>
+      <div class="box" >
+         <div class="img1" id="mad">
+
+            <a href="Madatha-Kaja"><img class="a" src="Madatha-Kaja.jpg"></a>
+            <img class="img3" src="ex.png">
+
+         </div>
+         <h5 class="p">Madatha Kaja</h5>
+         <h5 class="p1">Rs.180.00</h5>
+         <h5 class="p2">250gms</h5>
+         <!-- <a href="#" class="btn btn-dark btn-outline-warning center">Add Cart</a> -->
+
+      </div>
+
+   </div>
+   <div class="ad">
+
+      <div class="box">
+         <div class="img1">
+
+            <a href="Mysore-Pak"><img class="a" src="Mysore-Pak.jpg"></a>
+            <img class="img2" src="bes.png">
+            <img class="img3" src="ex.png">
+
+         </div>
+         <h5 class="p">Mysore Pak</h5>
+         <h5 class="p1">Rs.300.00</h5>
+         <h5 class="p2">250gms</h5>
+         <!-- <a href="#" class="btn btn-dark btn-outline-warning center">Add Cart</a> -->
+
+      </div>
+
+      <div class="box">
+         <div class="img1">
+
+            <a href="Palli-Chikki"><img class="a" src="palli_chikki.jpg"></a>
+            <img class="img3" src="ex.png">
+            <img class="img3" src="ex.png">
+
+         </div>
+         <h5 class="p">Palli Chikki</h5>
+         <h5 class="p1">Rs.100.00</h5>
+         <h5 class="p2">250gms</h5>
+         <!-- <a href="#" class="btn btn-dark btn-outline-warning center">Add Cart</a> -->
+
+      </div>
+      <div class="box">
+         <div class="img1">
+
+            <a href="Rasmalai"><img class="a" src="Rasmalai.jpg"></a>
+            <img class="img2" src="bes.png">
+
+         </div>
+         <h5 class="p">Rasmalai</h5>
+         <h5 class="p1">Rs.160.00</h5>
+         <h5 class="p2">250gms</h5>
+         <!-- <a href="#" class="btn btn-dark btn-outline-warning center">Add Cart</a> -->
+
+      </div>
+      <div class="box">
+         <div class="img1">
+
+            <a href="Soanpapidi"> <img class="a" src="soanpapdi.webp"></a>
+            <img class="img3" src="ex.png">
+
+         </div>
+         <h5 class="p">Soanpapidi</h5>
+         <h5 class="p1">Rs.80.00</h5>
+         <h5 class="p2">250gms</h5>
+         <!-- <a href="#" class="btn btn-dark btn-outline-warning center">Add Cart</a> -->
+
+      </div>
+   </div>
+   <div class="foot">
+      <div class="f1">
+         <h3>Quick Links</h3>
+         <a href="">PRIVACY POLICY</a>
+         <a href="">REFUND POLICY</a>
+         <a href="">SHIPPING POLICY</a>
+         <a href="">TERMS OF SERVICE</a>
+         <a href="">CONTACT US</a>
+         <a href="">FAQ's</a>
+      </div>
+      <div class="f2">
+         <h3>We'd Be Happy To Assist You!</h3>
+         <p>Timings:</p>
+         <p>Monday to Saturday</p>
+         <p>10.00 AM to 5.30 PM IST</p>
+         <p>Email: wecare@bandarmithai.in</p>
+         <p>Phone: +91 7306637373</p>
+         <p>Whatsapp: +91 8977332019
+
+         </p>
+      </div>
+      <div class="f3">
+         <h3>Shop</h3>
+         <a href="">Sweets</a>
+         <a href="">Savories</a>
+         <a href="">Pickles & podi's</a>
+         <a href="">Cookies</a>
+      </div>
+   </div>
+</body>
+</html>

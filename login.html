@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Login</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <div class="container">
+    <form id="loginform" action="http://localhost:4000/login" method="post">
+        <h2>Login</h2>
+      <input type="text" placeholder="User Name" id="name" name="name" required />
+      <input type="password" placeholder="Password" id="password" name="password" required />
+      <button type="submit">Login</button>
+      <p>Don't have an account? <a href="signup.html">Sign Up</a></p>
+    </form>
+  </div>
+  <body>
+    <script>  
+    document.getElementById("loginform").addEventListener("submit", function (e) {
+           e.preventDefault()
+        const name = document.getElementById('name').value.trim();
+        const password = document.getElementById('password').value.trim();
+
+        const nameRegex = /^[A-Za-z,0-9]+$/;
+        const passwordRegex = /^(?=.*[A-Za-z])(?=.*\d)(?=.*[^A-Za-z\d])[A-Za-z\d\S]{5,12}$/;
+
+        if (!nameRegex.test(name)) {
+            alert("Name must contain letters and numbers only");
+            return false;
+        }
+
+        if (!passwordRegex.test(password)) {
+            alert("Password must be 5-12 characters and include letters, numbers, and symbols");
+            return false;
+        }
+        this.submit()
+
+    });
+</script>
+</body>
+</html>
